@@ -1,0 +1,387 @@
+@font-face {
+   font-family: 'Rubik';
+   src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff');
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Rubik';
+   src: url('../fonts/Rubik-SemiBold.woff2') format('woff2'),
+      url('../fonts/Rubik-SemiBold.woff') format('woff');
+   font-style: normal;
+   font-weight: 600;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Rubik';
+   src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+      url('../fonts/Rubik-Bold.woff') format('woff');
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Exo 2';
+   src: url('../fonts/Exo2-Medium.woff2') format('woff2'),
+      url('../fonts/Exo2-Medium.woff') format('woff');
+   font-style: normal;
+   font-weight: 500;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Exo 2';
+   src: url('../fonts/Exo2-Bold.woff2') format('woff2'),
+      url('../fonts/Exo2-Bold.woff') format('woff');
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+}
+
+body {
+   background: #EAEAEA;
+   font-family: 'Exo 2', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   color: #202020;
+}
+
+section {
+   margin-bottom: 90px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+   font-weight: 700;
+   font-size: 98px;
+   line-height: 116px;
+   text-transform: uppercase;
+}
+
+h3 {
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 47.4px;
+}
+
+button {
+   padding: 12px 40px;
+   color: #EAEAEA;
+   background: transparent;
+   border: 1px solid #EAEAEA;
+   border-radius: 10px;
+   transition: all 0.5s;
+
+   &:hover {
+      background: #EAEAEA;
+      color: #202020;
+      border-color: #202020;
+   }
+}
+
+input {
+   padding: 12px 0 12px 20px;
+   background: transparent;
+   color: #fff;
+   border: 1px solid #A0A0A0;
+   border-radius: 10px;
+   font-family: 'Exo 2', sans-serif;
+   font-weight: 500;
+   position: relative;
+
+   &:focus {
+      padding: 17px 0 7px 20px;
+      color: #fff;
+      border-color: #fff;
+   }
+
+   &:focus::placeholder {
+      position: absolute;
+      top: 4px;
+      color: #A0A0A0;
+      font-size: 10px;
+      line-height: 12px;
+   }
+}
+
+.container {
+   max-width: 1120px;
+   margin: 0 auto;
+   padding: 0 5px;
+}
+
+.logo {
+
+   &__link {}
+
+   &__img {}
+}
+
+.header {}
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+
+   &__link {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+   }
+}
+
+.landing {
+   position: relative;
+   padding: 40px 0 120px;
+   color: #EAEAEA;
+   background: #202020;
+
+   &__title {
+      width: 555px;
+      margin-bottom: 40px;
+   }
+
+   &__subtitle {
+      width: 353px;
+      margin-bottom: 65px;
+   }
+
+   &__link {}
+
+   &__link-btn {}
+
+   &__img {
+      position: absolute;
+      right: 0;
+      top: 11px;
+   }
+}
+
+.advantages {
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__box {
+      width: 350px;
+      height: 245px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+   }
+
+   &__title {
+      width: 255px;
+      margin-bottom: 53px;
+      color: #202020;
+   }
+
+   &__text {}
+}
+
+.deliveries {
+   color: #EAEAEA;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      background: #202020;
+      border-radius: 16px;
+   }
+
+   &__left {
+      max-width: 384px;
+      padding: 30px;
+   }
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__text {
+      margin-bottom: 20px;
+
+      &:nth-last-child(2) {
+         margin-bottom: 60px;
+      }
+   }
+
+   &__link {}
+
+   &__link-btn {
+      width: 324px;
+   }
+
+   &__right {
+      width: 726px;
+      height: 385px;
+      background-image: url(../images/deliveries-box.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+   &__img {}
+}
+
+.partners {
+   color: #202020;
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__link {}
+
+   &__link-img {}
+}
+
+.orders {
+   position: relative;
+   background: #202020;
+   color: #EAEAEA;
+
+   &__inner {
+      width: 293px;
+      margin: 0 auto;
+      padding: 138px 0 280px;
+   }
+
+   &__title {
+      margin-bottom: 30px;
+   }
+
+   &__input {
+      width: 293px;
+      margin-bottom: 10px;
+   }
+
+   &__link {
+      display: block;
+      margin-top: 15px;
+   }
+
+   &__link-btn {
+      width: 100%;
+   }
+
+   &__img {
+      position: absolute;
+   }
+
+   &__img-left {
+      left: 0;
+      top: -100px;
+   }
+
+   &__img-right {
+      right: 0;
+      top: 10px;
+   }
+
+   &__img-bottom {
+      bottom: -160px;
+   }
+}
+
+.footer {
+   padding: 40px 0 75px;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 90px;
+   }
+
+   &__left {
+      width: 422px;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__sections {}
+
+   &__sections-link,
+   &__contacts-link {
+      display: block;
+      margin-bottom: 20px;
+
+      &:nth-last-child(1) {
+         margin-bottom: 0;
+      }
+   }
+
+   &__sections-link {}
+
+   &__contacts {}
+
+   &__contacts-link {}
+
+   &__right {
+      width: 276px;
+      display: flex;
+   }
+
+   &__apps {}
+
+   &__apps-link {
+      display: inline-block;
+      height: 47px;
+      margin-bottom: 10px;
+
+      &:nth-last-child(1) {
+         margin-bottom: 0;
+      }
+   }
+
+   &__apps-img {}
+
+   &__qrcode-link {}
+
+   &__qrcode-img {}
+
+   &__circa {
+      font-weight: 700;
+   }
+}
+
+@media (max-width: 1360px) {
+   .landing {
+      &__img {
+         height: 80%;
+      }
+   }
+
+   .orders {
+
+      &__img-left,
+      &__img-right {
+         height: 55%;
+         top: 0;
+      }
+
+      &__img-left {}
+   }
+}
