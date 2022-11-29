@@ -43,6 +43,10 @@
    font-display: swap;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    background: #EAEAEA;
    font-family: 'Exo 2', sans-serif;
