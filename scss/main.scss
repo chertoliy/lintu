@@ -54,6 +54,7 @@ body {
    font-size: 16px;
    line-height: 19px;
    color: #202020;
+   overflow-x: hidden;
 }
 
 section {
@@ -123,7 +124,6 @@ input {
 }
 
 .container {
-   position: relative;
    max-width: 1120px;
    margin: 0 auto;
    padding: 0 5px;
@@ -163,6 +163,10 @@ input {
    color: #EAEAEA;
    background: #202020;
 
+   &__container {
+      position: relative;
+   }
+
    &__title {
       width: 555px;
       margin-bottom: 40px;
@@ -179,7 +183,7 @@ input {
 
    &__img {
       position: absolute;
-      right: 0;
+      right: -505px;
       top: 11px;
    }
 }
@@ -243,7 +247,7 @@ input {
 
    &__right {
       width: 100%;
-      height: 363px;
+      height: 374px;
       background-image: url(../images/deliveries-box.png);
       background-repeat: no-repeat;
       background-size: cover;
@@ -273,12 +277,14 @@ input {
 }
 
 .orders {
-   position: relative;
    background: #202020;
    color: #EAEAEA;
 
-   &__inner {
+   &__container {
       position: relative;
+   }
+
+   &__inner {
       width: 293px;
       margin: 0 auto;
       padding: 138px 0 280px;
@@ -308,19 +314,19 @@ input {
 
    &__img-left {
       height: 70%;
-      left: 0;
+      left: -345px;
       top: -30px;
    }
 
    &__img-right {
       height: 61%;
-      right: 0;
+      right: -268px;
       top: 70px;
    }
 
    &__img-bottom {
-      bottom: -160px;
-      left: -21px;
+      bottom: -180px;
+      left: 382px;
    }
 }
 
@@ -415,6 +421,7 @@ input {
 
       &__img {
          height: 110%;
+         right: -170px;
       }
    }
 
@@ -450,6 +457,7 @@ input {
    .orders {
 
       &__inner {
+         position: relative;
          width: 250px;
          margin: 0 auto;
          padding: 75px 0 140px;
@@ -461,13 +469,13 @@ input {
 
       &__img-left {
          height: 80%;
-         left: 0;
+         left: -140px;
          top: -30px;
       }
 
       &__img-right {
          height: 71%;
-         right: 0;
+         right: -100px;
          top: 70px;
       }
 
@@ -583,7 +591,7 @@ input {
 
       &__img-bottom {
          height: 35%;
-         bottom: -80px;
+         bottom: -90px;
          left: 43px;
       }
    }
@@ -682,6 +690,7 @@ input {
       &__img {
          height: 130%;
          top: -10px;
+         right: -100px;
       }
    }
 
