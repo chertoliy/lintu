@@ -54,7 +54,11 @@ body {
    font-size: 16px;
    line-height: 19px;
    color: #202020;
-   overflow-x: hidden;
+}
+
+.wrapper {
+   position: relative;
+   overflow: hidden;
 }
 
 section {
@@ -156,6 +160,10 @@ input {
    &__btn-mobile {
       display: none;
    }
+}
+
+.mobile-menu {
+   display: none;
 }
 
 .landing {
@@ -448,10 +456,6 @@ input {
       &__left {
          max-width: 384px;
       }
-
-      &__text {
-         &:nth-last-child(2) {}
-      }
    }
 
    .orders {
@@ -625,15 +629,13 @@ input {
       line-height: 35.55px;
    }
 
-   .header {}
-
    .container {
       max-width: 800px;
       padding: 0 15px;
    }
 
    .menu {
-
+      position: relative;
       &__link {
          display: none;
       }
@@ -663,6 +665,45 @@ input {
          display: block;
       }
    }
+
+   .mobile-menu {
+      display: block;
+      width: 50%;
+      height: 100%;
+      right: 0;
+      z-index: 1;
+      padding: 60px 30px;
+      position: absolute;
+      color: #EAEAEA;
+      background: rgba($color: #202020, $alpha: 0.9);
+      &__sections {}
+
+      &__sections-link {
+         display: block;
+         margin-bottom: 10px;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+
+      &__btn {
+         position: absolute;
+         right: 16px;
+         top: 23px;
+         border: none;
+         padding: 0;
+         &:hover {
+            background: transparent;
+         }
+      }
+
+      &__btn-img {}
+   }
+
+   .mobile-menu--close {
+      display: none;
+   }
+
 
    .landing {
       padding: 31px 0 45px;
