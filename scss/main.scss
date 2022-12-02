@@ -303,7 +303,7 @@ input {
    }
 
    &__input {
-      width: 293px;
+      width: 100%;
       margin-bottom: 10px;
    }
 
@@ -465,10 +465,6 @@ input {
          width: 250px;
          margin: 0 auto;
          padding: 75px 0 140px;
-      }
-
-      &__input {
-         width: 100%;
       }
 
       &__img-left {
@@ -636,6 +632,7 @@ input {
 
    .menu {
       position: relative;
+
       &__link {
          display: none;
       }
@@ -676,11 +673,13 @@ input {
       position: absolute;
       color: #EAEAEA;
       background: rgba($color: #202020, $alpha: 0.9);
+
       &__sections {}
 
       &__sections-link {
          display: block;
          margin-bottom: 10px;
+
          &:hover {
             text-decoration: underline;
          }
@@ -692,6 +691,7 @@ input {
          top: 23px;
          border: none;
          padding: 0;
+
          &:hover {
             background: transparent;
          }
