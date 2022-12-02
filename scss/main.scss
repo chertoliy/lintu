@@ -680,6 +680,7 @@ input {
          display: block;
          margin-bottom: 15px;
          position: relative;
+
          &::after {
             content: '';
             position: absolute;
@@ -831,7 +832,7 @@ input {
       }
 
       &__inner {
-         width: 100%;
+         width: 344px;
          padding-bottom: 172px;
       }
 
@@ -895,6 +896,17 @@ input {
 
       &__img {
          top: -310px;
+      }
+   }
+
+   .orders {
+      &__inner {
+         width: 100%;
+      }
+
+      &__img-bottom {
+         left: 50%;
+         margin-left: -104px;
       }
    }
 }
