@@ -665,11 +665,11 @@ input {
 
    .mobile-menu {
       display: block;
-      width: 50%;
+      width: 60%;
       height: 100%;
       right: 0;
       z-index: 1;
-      padding: 60px 30px;
+      padding: 75px 30px;
       position: absolute;
       color: #EAEAEA;
       background: rgba($color: #202020, $alpha: 0.9);
@@ -678,10 +678,16 @@ input {
 
       &__sections-link {
          display: block;
-         margin-bottom: 10px;
-
-         &:hover {
-            text-decoration: underline;
+         margin-bottom: 15px;
+         position: relative;
+         &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #EAEAEA;
          }
       }
 
