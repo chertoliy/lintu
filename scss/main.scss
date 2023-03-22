@@ -149,6 +149,12 @@ input {
    &__link {
       font-family: 'Rubik', sans-serif;
       font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      padding: 0;
+      color: #202020;
+      border: none;
+      transition: none;
    }
 
    &__btn-mobile {
@@ -642,10 +648,9 @@ input {
       border-bottom: 1px solid #202020;
       box-shadow: 0 0 7px 1px #202020;
 
-      &__sections-link {
+      &__link {
          display: block;
          margin-bottom: 20px;
-         position: relative;
          font-family: 'Rubik';
 
          &:hover {
